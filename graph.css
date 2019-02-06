@@ -1,0 +1,163 @@
+body {
+    /* Positioning */
+    /* Display & Box Model */
+    /* Color */
+    background-color: #b2b2b2;
+    /* Text */
+    text-align: center;
+    /* Other */
+}
+
+#stats {
+    /* Positioning */
+    /* Display & Box Model */
+    display: inline-block;
+    width: 600px;
+    height: 1200px;
+    padding: 10px;
+    margin: 25px;
+    /* Color */
+    background-color: #FFFFFF;
+    /* Text */
+    /* Other */
+}
+
+.flex-row {
+    /* Positioning */
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    /* Color */
+    /* Text */
+    /* Other */
+}
+
+.flex-column {
+    /* Positioning */
+    /* Display & Box Model */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Color */
+    /* Text */
+    /* Other */
+}
+
+.bar-graph {
+    /* Positioning */
+    /* Display & Box Model */
+    display: flex;
+    margin: 0px 30px;
+    /* Color */
+    /* Text */
+    /* Other */
+}
+
+.bar {
+    /* Positioning */
+    /* Display & Box Model */
+    display: flex;
+    border-radius: 2px;
+    /* Color */
+    /* Text */
+    /* Other */
+}
+
+.bar-label {
+    /* Positioning */
+    /* Display & Box Model */
+    margin: 0px;
+    /* Color */
+    color: white;
+    /* Text */
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    /* Other */
+}
+
+.graph-title {
+    /* Positioning */
+    /* Display & Box Model */
+    margin: 0px 0px 20px 0px;
+    /* Color */
+    color: #797979;
+    /* Text */
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    /* Other */
+}
+
+.key-circle {
+    /* Positioning */
+    /* Display & Box Model */
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    /* Color */
+    /* Text */
+    /* Other */
+}
+
+.key-name {
+    /* Positioning */
+    /* Display & Box Model */
+    margin-left: 15px;
+    /* Color */
+    /* Text */
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    /* Other */
+}
+
+.key-pair {
+    /* Positioning */
+    /* Display & Box Model */
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    /* Color */
+    /* Text */
+    /* Other */
+}
+
+.section-title {
+    /* Positioning */
+    /* Display & Box Model */
+    margin: 0px 0px 15px 0px;
+    /* Color */
+    color: #797979;
+    /* Text */
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    /* Other */
+}
+
+.title {
+    /* Positioning */
+    /* Display & Box Model */
+    margin: 20px 0px 0px 0px;
+    /* Color */
+    color: #797979;
+    /* Text */
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    /* Other */
+}
+
+.divider {
+    /* Positioning */
+    /* Display & Box Model */
+    width: 560px;
+    height: 1px;
+    margin: 20px auto;
+    border-bottom: 1px solid #707070;
+    /* Color */
+    /* Text */
+    /* Other */
+}

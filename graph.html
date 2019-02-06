@@ -1,0 +1,140 @@
+<doctype html>
+<html>
+
+    <head>
+
+        <title>Graph Demo</title>
+        <link rel="stylesheet" href="./graph.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Open+Sans" rel="stylesheet">
+        <meta charset="utf-8"/>
+    </head>
+
+    <body onload="main();">
+
+        <div id="colors">
+            <bar-label>User Color</bar-label>
+            <input type="text" name="color1" value="#649CFF" placeholder="#FFFFFF">
+            <bar-label>Region Color</bar-label>
+            <input type="text" name="color2" value="#FFB264" placeholder="#FFFFFF">
+            <bar-label>ResNET Color</bar-label>
+            <input type="text" name="color3" value="#797979" placeholder="#FFFFFF">
+            <button onclick="updateColors()">Update Colors</button>
+        </div>
+
+        <div id="stats">
+
+            <h1 class="title">Your Quick Stats</h1>
+
+            <div class="divider"></div>
+
+            <div id="tickets">
+                <h2 class="section-title">Ticket Summary</h2>
+                <div class="flex-row">
+                    <span>
+                        <h1 class="graph-title" style="text-align: right; margin-right: 30px;">February</h1>
+                        <div id="tickets_month_hori" class="bar-graph">
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                        </div>
+                    </span>
+                    <span>
+                        <h1 class="graph-title" style="text-align: left; margin-left: 30px;">Semester</h1>
+                        <div id="tickets_semester_hori" class="bar-graph">
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div id="key_hori" class="flex-row">
+                    <div class="key-pair">
+                        <span class="key-circle"></span>
+                        <p class="key-name"></p>
+                    </div>
+                    <div class="key-pair">
+                        <span class="key-circle"></span>
+                        <p class="key-name"></p>
+                    </div>
+                    <div class="key-pair">
+                        <span class="key-circle"></span>
+                        <p class="key-name"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="tickets">
+                <h2 class="section-title">Ticket Summary</h2>
+                <div class="flex-row">
+                    <span>
+                        <h1 class="graph-title" style="text-align: center; margin-right: 30px;">February</h1>
+                        <div id="tickets_month_vert" class="bar-graph">
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                        </div>
+                    </span>
+                    <span>
+                        <h1 class="graph-title" style="text-align: center; margin-left: 30px;">Semester</h1>
+                        <div id="tickets_semester_vert" class="bar-graph">
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                            <div class="bar">
+                                <p class="bar-label"></p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div id="key_vert" class="flex-row">
+                    <div class="key-pair">
+                        <span class="key-circle"></span>
+                        <p class="key-name"></p>
+                    </div>
+                    <div class="key-pair">
+                        <span class="key-circle"></span>
+                        <p class="key-name"></p>
+                    </div>
+                    <div class="key-pair">
+                        <span class="key-circle"></span>
+                        <p class="key-name"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+        </div>
+
+    </body>
+
+    <script type="text/javascript" src="./graph.js"></script>
+    <script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+
+</html>
