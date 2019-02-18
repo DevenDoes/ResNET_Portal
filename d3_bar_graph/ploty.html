@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>C3.js Chart Library</title>
+        <!-- Load c3.css -->
+        <link href="./c3-0.6.12/c3.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="graph"></div>
+    </body>
+    <!-- Load d3.js and c3.js -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./c3-0.6.12/c3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
+
+<script>
+
+var chart = c3.generate({
+    bindto: '#graph',
+    axis: {
+        x: {
+            show: false,
+        },
+        y: {
+            show: false,
+        },
+    },
+    tooltip: {
+        grouped: true,
+        format: {
+            title: function(x, index) {return 'Ticket Count';}
+        },
+        contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
+            let html = "<table class='table table-dark'><tbody>";
+            for(let i = 0; i < d.length; i++) {
+                html += "<tr><th scope='row'>" + d[i].name + "</th><td>" + d[i].value + "</td></tr>";
+            }
+            /*d.forEach(function() {
+                console.log(d[0].value);
+                //html += "<li class='list-group-item'>" + d. + "</li>";
+            });*/
+            return html + "</tbody></table>";
+        },
+    },
+    data: {
+        columns: [
+            ['You', Math.floor(Math.random()*100)],
+            ['Avg. North', Math.floor(Math.random()*100)],
+            ['Avg. ResNET', Math.floor(Math.random()*100)],
+        ],
+        type: 'bar'
+    },
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        }
+        // or
+        //width: 100 // this makes bar width 100px
+    }
+});
+
+</script>
